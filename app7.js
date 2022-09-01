@@ -1,50 +1,50 @@
 //[---31.08.2022 - app7.js - start---]
 console.log('[---31.08.2022 - app7.js - start---]');
 
-// zadanie o uczniach
+// zadanie o uczniach - patrz app7.js
 console.log('-----zadanie o uczniach START:----');
-const listaUczniow = [
-	{ firstName: 'Peter', age: 6, score: 34 },
-	{ firstName: 'Pit', age: 7, score: 49 },
-	{ firstName: 'Paul', age: 8, score: 64 },
-	{ firstName: 'Pier', age: 9, score: 91 },
-];
-for (let i = 0; i < listaUczniow.length; i++) {
-	const a = listaUczniow[i].age;
-	let klasa;
-	switch (a) {
-		case 6:
-			klasa = 1;
-			break;
-		case 7:
-			klasa = 2;
-			break;
-		case 8:
-			klasa = 3;
-			break;
-		case 9:
-			klasa = 4;
-	}
-	listaUczniow[i].klasa = klasa;
+// const listaUczniow = [
+// 	{ firstName: 'Peter', age: 6, score: 34 },
+// 	{ firstName: 'Pit', age: 7, score: 49 },
+// 	{ firstName: 'Paul', age: 8, score: 64 },
+// 	{ firstName: 'Pier', age: 9, score: 91 },
+// ];
+// for (let i = 0; i < listaUczniow.length; i++) {
+// 	const a = listaUczniow[i].age;
+// 	let klasa;
+// 	switch (a) {
+// 		case 6:
+// 			klasa = 1;
+// 			break;
+// 		case 7:
+// 			klasa = 2;
+// 			break;
+// 		case 8:
+// 			klasa = 3;
+// 			break;
+// 		case 9:
+// 			klasa = 4;
+// 	}
+// 	listaUczniow[i].klasa = klasa;
 
-	const s = listaUczniow[i].score;
-	let ocena;
-	if (s <= 35) {
-		ocena = 'niedostateczna';
-	} else if (s <= 50) {
-		ocena = 'dopuszczajaca';
-	} else if (s <= 65) {
-		ocena = 'dostateczna';
-	} else if (s <= 75) {
-		ocena = 'dobra';
-	} else if (s <= 90) {
-		ocena = 'bardzo dobra';
-	} else if (s > 90) {
-		ocena = 'celujaca';
-	}
-	listaUczniow[i].ocena = ocena;
-}
-console.log(listaUczniow);
+// 	const s = listaUczniow[i].score;
+// 	let ocena;
+// 	if (s <= 35) {
+// 		ocena = 'niedostateczna';
+// 	} else if (s <= 50) {
+// 		ocena = 'dopuszczajaca';
+// 	} else if (s <= 65) {
+// 		ocena = 'dostateczna';
+// 	} else if (s <= 75) {
+// 		ocena = 'dobra';
+// 	} else if (s <= 90) {
+// 		ocena = 'bardzo dobra';
+// 	} else if (s > 90) {
+// 		ocena = 'celujaca';
+// 	}
+// 	listaUczniow[i].ocena = ocena;
+// }
+// console.log(listaUczniow);
 
 console.log('-----zadanie o uczniach END:----');
 
@@ -346,3 +346,6 @@ console.log(var1, 'var1 in global');
 (function () {
 	console.log('test IIFE');
 })();
+
+//[---31.08.2022 - app7.js - end---]
+console.log('[---31.08.2022 - app7.js - end---]');
